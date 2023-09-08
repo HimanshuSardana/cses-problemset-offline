@@ -1,0 +1,66 @@
+<h3>Book Shop II</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Book Shop II</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1159"/>
+You are in a book shop which sells $n$ different books. You know the price, the number of pages and the number of copies of each book.<br/>
+<br/>
+You have decided that the total price of your purchases will be at most $x$. What is the maximum number of pages you can buy? You can buy several copies of the same book.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line contains two integers $n$ and $x$: the number of book and the maximum total price.<br/>
+<br/>
+The next line contains $n$ integers $h_1,h_2,\ldots,h_n$: the price of each book.<br/>
+<br/>
+The next line contains $n$ integers $s_1,s_2,\ldots,s_n$: the number of pages of each book.<br/>
+<br/>
+The last line contains $n$ integers $k_1,k_2,\ldots,k_n$: the number of copies of each book.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print one integer: the maximum number of pages.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 100$<br/>
+<li>$1 \le x \le 10^5$<br/>
+<li>$1 \le h_i, s_i, k_i \le 1000$<br/>
+</li></li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>3 10<br/>
+2 6 3<br/>
+8 5 4<br/>
+3 5 2</code><br/>
+<br/>
+Output:<br/>
+<code>28</code><br/>
+<br/>
+Explanation: You can buy three copies of book 1 and one copy of book 3. The price is $3 \cdot 2 + 3 = 9$ and the number of pages is $3 \cdot 8 + 4 = 28$.    </div>

@@ -1,0 +1,65 @@
+<h3>Swap Round Sorting</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Swap Round Sorting</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1698"/>
+You are given an array containing a permutation of numbers $1,2,\dots,n$, and your task is to sort the array using <i>swap rounds</i>. On each swap round, you can choose any number of distinct pairs of elements and swap each pair.<br/>
+<br/>
+Your task is to find the minimum number of rounds and show how you can choose the pairs in each round.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has an integer $n$: the size of the array.<br/>
+<br/>
+The second line has $n$ integers $x_1,x_2,\dots,x_n$: the initial permutation.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+First print an integer $k$: the minimum number of rounds.<br/>
+<br/>
+Then, for each round, print the number of swaps and the indices of each swap. You can print any valid solution.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li> $1 \le n \le 2 \cdot 10^5$<br/>
+</li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>5<br/>
+5 2 1 3 4</code><br/>
+<br/>
+Output:<br/>
+<code>2<br/>
+2<br/>
+1 3<br/>
+4 5<br/>
+1<br/>
+3 5</code><br/>
+<br/>
+Explanation: The inital array is $[5,2,1,3,4]$. After round $1$, the array becomes $[1,2,5,4,3]$. After round $2$, the array becomes $[1,2,3,4,5]$.    </div>

@@ -1,0 +1,61 @@
+<h3>Apples and Bananas</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Apples and Bananas</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="2111"/>
+There are apples and bananas and each of them has an integer weight between $1 \ldots k$. Your task is to calculate for each weight $w$ between $2...2k$ the number of ways we can choose an apple and a banana whose combined weight is $w$.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line contains three integers $k$, $n$ and $m$: the number $k$, the number of apples and the number of bananas.<br/>
+<br/>
+The next line contains $n$ integers $a_1,a_2,\ldots,a_n$: weight of each apple.<br/>
+<br/>
+The last line contains $m$ integers $b_1,b_2,\ldots,b_m$: weight of each banana.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+For each integer $w$ between $2 \ldots 2k$ print the number of ways to choose an apple and a banana whose combined weight is $w$.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le k,n,m \le 2 \cdot 10^5$<br/>
+<li>$1 \le a_i \le k$<br/>
+<li>$1 \le b_i \le k$<br/>
+</li></li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>5 3 4<br/>
+5 2 5<br/>
+4 3 2 3<br/>
+</code><br/>
+Output:<br/>
+<code>0 0 1 2 1 2 4 2 0  </code><br/>
+<br/>
+Explanation: For example for $w$ = $8$ there are $4$ different ways: we can pick an apple of weight $5$ in two different ways and a banana of weight $3$ in two different ways.    </div>

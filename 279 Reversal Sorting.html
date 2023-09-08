@@ -1,0 +1,58 @@
+<h3>Reversal Sorting</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Reversal Sorting</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="2075"/>
+You have an array that contains a permutation of integers $1,2,\dots,n$. Your task is to sort the array in increasing order by reversing subarrays. You can construct any solution that has at most $n$ reversals.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has an integer $n$: the size of the array. The array elements are numbered $1,2,\dots,n$.<br/>
+<br/>
+The next line has $n$ integers $x_1,x_2,\dots,x_n$: the contents of the array.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+First print an integer $k$: the number of reversals.<br/>
+<br/>
+After that, print $k$ lines that describe the reversals. Each line has two integers $a$ and $b$: you reverse a subarray from position $a$ to position $b$.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+</li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>4<br/>
+2 3 1 4</code><br/>
+<br/>
+Output:<br/>
+<code>2<br/>
+1 3<br/>
+2 3</code> </div>

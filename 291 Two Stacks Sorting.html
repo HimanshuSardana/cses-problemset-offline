@@ -1,0 +1,60 @@
+<h3>Two Stacks Sorting</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Two Stacks Sorting</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="2402"/>
+You are given an input list that consists of $n$ numbers. Each integer between $1$ and $n$ appears exactly once in the list.<br/>
+<br/>
+Your task is to create a sorted output list using two stacks. On each move you can do one of the following:<ul>
+<li> Move the first number from the input list to a stack<br/>
+<li> Move a number from a stack to the end of the output list<br/>
+</li></li></ul>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has an integer $n$.<br/>
+<br/>
+The second line has $n$ integers: the contents of the input list.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print $n$ integers: for each number the stack where it is moved ($1$ or $2$).<br/>
+<br/>
+You can print any valid solution. If there are no solutions, print "IMPOSSIBLE".<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+</li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>5<br/>
+2 3 1 5 4</code><br/>
+<br/>
+Output:<br/>
+<code>1 2 1 1 2</code> </div>

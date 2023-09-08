@@ -1,0 +1,71 @@
+<h3>Letter Pair Move Game</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Letter Pair Move Game</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="2427"/>
+There are $2n$ boxes in a line. Two adjacent boxes are empty, and all other boxes have a letter "A" or "B". Both letters appear in exactly $n-1$ boxes.<br/>
+<br/>
+Your task is to move the letters so that all letters "A" appear before any letter "B". On each turn you can choose any two adjacent boxes that have a letter and move the letters to the two adjacent empty boxes, preserving their order.<br/>
+<br/>
+It can be proven that either there is a solution that consists of at most $10n$ turns or there are no solutions.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first line has an integer $n$: there are $2n$ boxes.<br/>
+<br/>
+The second line has a string of $2n$ characters which describes the starting position. Each character is "A", "B" or "." (empty box).<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+First print an integer $k$: the number of turns. After this, print $k$ lines that describe the moves. You can print any solution, as long as $k \le 1000$.<br/>
+<br/>
+If there are no solutions, print only "-1".<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li> $1 \le n \le 100$<br/>
+</li></ul>
+<b id="example1">Example 1</b><br/>
+<br/>
+Input:<br/>
+<code>3<br/>
+AB..BA</code><br/>
+<br/>
+Output:<br/>
+<code>2<br/>
+ABBA..<br/>
+A..ABB</code><br/>
+<br/>
+<b id="example2">Example 2</b><br/>
+<br/>
+Input:<br/>
+<code>3<br/>
+ABAB..</code><br/>
+<br/>
+Output:<br/>
+<code>-1</code> </div>

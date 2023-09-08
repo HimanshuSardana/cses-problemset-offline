@@ -1,0 +1,58 @@
+<h3>Bit Substrings</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Bit Substrings</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="2115"/>
+You are given a bit string of length $n$. Your task is to calculate for each $k$ between $0  \ldots n$ the number of non-empty substrings that contain exactly $k$ ones.<br/>
+<br/>
+For example, if the string is 101, there are:<br/>
+<ul>
+<li>1 substring that contains 0 ones: 0<br/>
+<li>4 substrings that contain 1 one: 01, 1, 1, 10<br/>
+<li>1 substring that contains 2 ones: 101<br/>
+<li>0 substrings that contain 3 ones<br/>
+</li></li></li></li></ul>
+<b id="input">Input</b><br/>
+<br/>
+The only input line contains a binary string of length $n$.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print $n+1$ values as specified above.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+</li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>101<br/>
+</code><br/>
+Output:<br/>
+<code>1 4 1 0 </code> </div>

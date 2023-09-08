@@ -1,0 +1,60 @@
+<h3>Coding Company</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Coding Company</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1665"/>
+Your company has $n$ coders, and each of them has a skill level between $0$ and $100$. Your task is to divide the coders into teams that work together.<br/>
+<br/>
+Based on your experience, you know that teams work well when the skill levels of the coders are about the same. For this reason, the penalty for creating a team is the skill level difference between the best and the worst coder.<br/>
+<br/>
+In how many ways can you divide the coders into teams such that the sum of the penalties is at most $x$?<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has two integers $n$ and $x$: the number of coders and the maximum allowed penalty sum.<br/>
+<br/>
+The next line has $n$ integers $t_1,t_2,\dots,t_n$: the skill level of each coder.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print one integer: the number of valid divisions modulo $10^9+7$.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 100$<br/>
+<li>$0 \le x \le 5000$<br/>
+<li>$0 \le t_i \le 100$<br/>
+</li></li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>3 2<br/>
+2 5 3</code><br/>
+<br/>
+Output:<br/>
+<code>3</code> </div>

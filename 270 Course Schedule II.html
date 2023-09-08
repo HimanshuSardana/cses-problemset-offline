@@ -1,0 +1,63 @@
+<h3>Course Schedule II</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Course Schedule II</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1757"/>
+You want to complete $n$ courses that have requirements of the form "course $a$ has to be completed before course $b$".<br/>
+<br/>
+You want to complete course $1$ as soon as possible. If there are several ways to do this, you want then to complete course $2$ as soon as possible, and so on.<br/>
+<br/>
+Your task is to determine the order in which you complete the courses.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has two integers $n$ and $m$: the number of courses and requirements. The courses are numbered $1,2,\dots,n$.<br/>
+<br/>
+Then, there are $m$ lines describing the requirements. Each line has two integers $a$ and $b$: course $a$ has to be completed before course $b$.<br/>
+<br/>
+You can assume that there is at least one valid schedule.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print one line having $n$ integers: the order in which you complete the courses.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li> $1 \le n \le 10^5$<br/>
+<li> $1 \le m \le 2 \cdot 10^5$<br/>
+<li> $1 \le a,b \le n$<br/>
+</li></li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>4 2<br/>
+2 1<br/>
+2 3</code><br/>
+<br/>
+Output:<br/>
+<code>2 1 3 4</code> </div>

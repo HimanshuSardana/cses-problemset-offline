@@ -1,0 +1,60 @@
+<h3>Sorting Methods</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Sorting Methods</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1162"/>
+Here are some possible methods using which we can sort the elements of an array in increasing order:<ol>
+<li> At each step, choose two adjacent elements and swap them.<br/>
+<li> At each step, choose any two elements and swap them.<br/>
+<li> At each step, choose any element and move it to another position.<br/>
+<li> At each step, choose any element and move it to the front of the array.<br/>
+</li></li></li></li></ol>
+Given a permutation of numbers $1,2,\ldots,n$, calculate the minimum number of steps to sort the array using the above methods.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line contains an integer $n$.<br/>
+<br/>
+The second line contains $n$ integers describing the permutation.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print four numbers: the minimum number of steps using each method.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+</li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>8<br/>
+7 8 2 6 5 1 3 4</code><br/>
+<br/>
+Output:<br/>
+<code>20 6 5 6</code> </div>

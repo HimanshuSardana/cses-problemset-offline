@@ -1,0 +1,53 @@
+<h3>Counting Sequences</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Counting Sequences</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="2228"/>
+Your task is to count the number of sequences of length $n$ where each element is an integer between $1 \dots k$ and each integer between $1 \dots k$ appears at least once in the sequence.<br/>
+<br/>
+For example, when $n=6$ and $k=4$, some valid sequences are $[1,3,1,4,3,2]$ and $[2,2,1,3,4,2]$.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The only input line has two integers $n$ and $k$.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print one integer: the number of sequences modulo $10^9+7$.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le k \le n \le 10^6$<br/>
+</li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>6 4</code><br/>
+<br/>
+Output:<br/>
+<code>1560</code> </div>

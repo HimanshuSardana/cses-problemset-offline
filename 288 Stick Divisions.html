@@ -1,0 +1,62 @@
+<h3>Stick Divisions</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Stick Divisions</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1161"/>
+You have a stick of length $x$ and you want to divide it into $n$ sticks, with given lengths, whose total length is $x$.<br/>
+<br/>
+On each move you can take any stick and divide it into two sticks. The cost of such an operation is the length of the original stick.<br/>
+<br/>
+What is the minimum cost needed to create the sticks?<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has two integers $x$ and $n$: the length of the stick and the number of sticks in the division.<br/>
+<br/>
+The second line has $n$ integers $d_1,d_2,\ldots,d_n$: the length of each stick in the division.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print one integer: the minimum cost of the division.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le x \le 10^9$<br/>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+<li>$\sum d_i = x$<br/>
+</li></li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>8 3<br/>
+2 3 3</code><br/>
+<br/>
+Output:<br/>
+<code>13</code><br/>
+<br/>
+Explanation: You first divide the stick of length $8$ into sticks of length $3$ and $5$ (cost $8$). After this, you divide the stick of length $5$ into sticks of length $2$ and $3$ (cost $5$). The total cost is $8+5=13$.    </div>
