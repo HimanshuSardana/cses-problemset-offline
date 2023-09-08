@@ -1,0 +1,57 @@
+<h3>String Functions</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - String Functions</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="2107"/>
+We consider a string of $n$ characters, indexed $1,2,\dots,n$. Your task is to calculate all values of the following functions:<br/>
+<ul>
+<li> $z(i)$ denotes the maximum length of a substring that begins at position $i$ and is a prefix of the string. In addition, $z(1)=0$.<br/>
+<li> $\pi(i)$ denotes the maximum length of a substring that ends at position $i$, is a prefix of the string, and whose length is at most $i-1$.<br/>
+</li></li></ul>
+Note that the function $z$ is used in the Z-algorithm, and the function $\pi$ is used in the KMP algorithm.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The only input line has a string of length $n$. Each character is between a–z.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print two lines: first the values of the $z$ function, and then the values of the $\pi$ function.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 10^6$<br/>
+</li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>abaabca</code><br/>
+<br/>
+Output:<br/>
+<code>0 0 1 2 0 0 1<br/>
+0 0 1 1 2 0 1</code> </div>

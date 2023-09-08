@@ -1,0 +1,60 @@
+<h3>Stick Game</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Stick Game</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1729"/>
+Consider a game where two players remove sticks from a heap. The players move alternately, and the player who removes the last stick wins the game.<br/>
+<br/>
+A set $P=\{p_1,p_2,\ldots,p_k\}$ determines the allowed moves. For example, if $P=\{1,3,4\}$, a player may remove $1$, $3$ or $4$ sticks.<br/>
+<br/>
+Your task is find out for each number of sticks $1,2,\dots,n$ if the first player has a winning or losing position.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has two integers $n$ and $k$: the number of sticks and moves.<br/>
+<br/>
+The next line has $k$ integers $p_1,p_2,\dots,p_k$ that describe the allowed moves. All integers are distinct, and one of them is $1$.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print a string containing $n$ characters: <code>W</code> means a winning position, and <code>L</code> means a losing position.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 10^6$<br/>
+<li>$1 \le k \le 100$<br/>
+<li>$1 \le p_i \le n$<br/>
+</li></li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>10 3<br/>
+1 3 4</code><br/>
+<br/>
+Output:<br/>
+<code>WLWWWWLWLW</code> </div>
