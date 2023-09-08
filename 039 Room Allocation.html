@@ -1,0 +1,64 @@
+<h3>Room Allocation</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Room Allocation</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1164"/>
+There is a large hotel, and $n$ customers will arrive soon. Each customer wants to have a single room.<br/>
+<br/>
+You know each customer's arrival and departure day. Two customers can stay in the same room if the departure day of the first customer is earlier than the arrival day of the second customer.<br/>
+<br/>
+What is the minimum number of rooms that are needed to accommodate all customers? And how can the rooms be allocated?<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line contains an integer $n$: the number of customers.<br/>
+<br/>
+Then there are $n$ lines, each of which describes one customer. Each line has two integers $a$ and $b$: the arrival and departure day.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print first an integer $k$: the minimum number of rooms required.<br/>
+<br/>
+After that, print a line that contains the room number of each customer in the same order as in the input. The rooms are numbered $1,2,\ldots,k$. You can print any valid solution.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+<li>$1 \le a \le b \le 10^9$<br/>
+</li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>3<br/>
+1 2<br/>
+2 4<br/>
+4 4</code><br/>
+<br/>
+Output:<br/>
+<code>2<br/>
+1 2 1</code> </div>

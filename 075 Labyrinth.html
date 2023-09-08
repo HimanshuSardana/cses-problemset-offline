@@ -1,0 +1,62 @@
+<h3>Labyrinth</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Labyrinth</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1193"/>
+You are given a map of a labyrinth, and your task is to find a path from start to end. You can walk left, right, up and down.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has two integers $n$ and $m$: the height and width of the map.<br/>
+<br/>
+Then there are $n$ lines of $m$ characters describing the labyrinth. Each character is <code>.</code> (floor), <code>#</code> (wall), <code>A</code> (start), or <code>B</code> (end). There is exactly one <code>A</code> and one <code>B</code> in the input.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+First print "YES", if there is a path, and "NO" otherwise.<br/>
+<br/>
+If there is a path, print the length of the shortest such path and its description as a string consisting of characters <code>L</code> (left), <code>R</code> (right), <code>U</code> (up), and <code>D</code> (down). You can print any valid solution.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n,m \le 1000$<br/>
+</li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>5 8<br/>
+########<br/>
+#.A#...#<br/>
+#.##.#B#<br/>
+#......#<br/>
+########</code><br/>
+<br/>
+Output:<br/>
+<code>YES<br/>
+9<br/>
+LDDRRRRRU</code> </div>

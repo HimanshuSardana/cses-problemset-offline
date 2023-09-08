@@ -1,0 +1,65 @@
+<h3>High Score</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - High Score</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1673"/>
+You play a game consisting of $n$ rooms and $m$ tunnels. Your initial score is $0$, and each tunnel increases your score by $x$ where $x$ may be both positive or negative. You may go through a tunnel several times.<br/>
+<br/>
+Your task is to walk from room $1$ to room $n$. What is the maximum score you can get?<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has two integers $n$ and $m$: the number of rooms and tunnels. The rooms are numbered $1,2,\dots,n$.<br/>
+<br/>
+Then, there are $m$ lines describing the tunnels. Each line has three integers $a$, $b$ and $x$: the tunnel starts at room $a$, ends at room $b$, and it increases your score by $x$. All tunnels are one-way tunnels.<br/>
+<br/>
+You can assume that it is possible to get from room $1$ to room $n$.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print one integer: the maximum score you can get. However, if you can get an arbitrarily large score, print $-1$.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2500$<br/>
+<li>$1 \le m \le 5000$<br/>
+<li>$1 \le a,b \le n$<br/>
+<li>$-10^9 \le x \le 10^9$<br/>
+</li></li></li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>4 5<br/>
+1 2 3<br/>
+2 4 -1<br/>
+1 3 -2<br/>
+3 4 7<br/>
+1 4 4</code><br/>
+<br/>
+Output:<br/>
+<code>5</code> </div>

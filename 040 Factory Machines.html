@@ -1,0 +1,62 @@
+<h3>Factory Machines</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Factory Machines</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1620"/>
+A factory has $n$ machines which can be used to make products. Your goal is to make a total of $t$ products.<br/>
+<br/>
+For each machine, you know the number of seconds it needs to make a single product. The machines can work simultaneously, and you can freely decide their schedule.<br/>
+<br/>
+What is the shortest time needed to make $t$ products?<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has two integers $n$ and $t$: the number of machines and products.<br/>
+<br/>
+The next line has $n$ integers $k_1,k_2,\dots,k_n$: the time needed to make a product using each machine.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print one integer: the minimum time needed to make $t$ products.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+<li>$1 \le t \le 10^9$<br/>
+<li>$1 \le k_i \le 10^9$<br/>
+</li></li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>3 7<br/>
+3 2 5</code><br/>
+<br/>
+Output:<br/>
+<code>8</code><br/>
+<br/>
+Explanation: Machine 1 makes two products, machine 2 makes four products and machine 3 makes one product.    </div>

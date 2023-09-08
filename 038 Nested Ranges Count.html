@@ -1,0 +1,65 @@
+<h3>Nested Ranges Count</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Nested Ranges Count</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="2169"/>
+Given $n$ ranges, your task is to count for each range how many other ranges it contains and how many other ranges contain it.<br/>
+<br/>
+Range $[a,b]$ contains range $[c,d]$ if $a \le c$ and $d \le b$.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has an integer $n$: the number of ranges.<br/>
+<br/>
+After this, there are $n$ lines that describe the ranges. Each line has two integers $x$ and $y$: the range is $[x,y]$.<br/>
+<br/>
+You may assume that no range appears more than once in the input.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+First print a line that describes for each range (in the input order) how many other ranges it contains.<br/>
+<br/>
+Then print a line that describes for each range (in the input order) how many other ranges contain it.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+<li>$1 \le x &lt; y \le 10^9$<br/>
+</li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>4<br/>
+1 6<br/>
+2 4<br/>
+4 8<br/>
+3 6</code><br/>
+<br/>
+Output:<br/>
+<code>2 0 0 0<br/>
+0 1 0 1</code> </div>

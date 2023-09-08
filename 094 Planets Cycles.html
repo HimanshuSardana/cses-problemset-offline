@@ -1,0 +1,59 @@
+<h3>Planets Cycles</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Planets Cycles</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1751"/>
+You are playing a game consisting of $n$ planets. Each planet has a teleporter to another planet (or the planet itself).<br/>
+<br/>
+You start on a planet and then travel through teleporters until you reach a planet that you have already visited before.<br/>
+<br/>
+Your task is to calculate for each planet the number of teleportations there would be if you started on that planet.<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has an integer $n$: the number of planets. The planets are numbered $1,2,\dots,n$.<br/>
+<br/>
+The second line has $n$ integers $t_1,t_2,\dots,t_n$: for each planet, the destination of the teleporter. It is possible that $t_i=i$.<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print $n$ integers according to the problem statement.<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br/>
+<li>$1 \le t_i \le n$<br/>
+</li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>5<br/>
+2 4 3 1 4</code><br/>
+<br/>
+Output:<br/>
+<code>3 3 1 3 4</code> </div>

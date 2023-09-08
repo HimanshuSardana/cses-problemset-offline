@@ -1,0 +1,61 @@
+<h3>Giant Pizza</h3><hr>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="content">
+<title>CSES - Giant Pizza</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input name="course" type="hidden" value="problemset"/>
+<input name="task" type="hidden" value="1684"/>
+Uolevi's family is going to order a large pizza and eat it together. A total of $n$ family members will join the order, and there are $m$ possible toppings. The pizza may have any number of toppings.<br/>
+<br/>
+Each family member gives two wishes concerning the toppings of the pizza. The wishes are of the form "topping $x$ is good/bad". Your task is to choose the toppings so that at least one wish from everybody becomes true (a good topping is included in the pizza or a bad topping is not included).<br/>
+<br/>
+<b id="input">Input</b><br/>
+<br/>
+The first input line has two integers $n$ and $m$: the number of family members and toppings. The toppings are numbered $1,2,\dots,m$.<br/>
+<br/>
+After this, there are $n$ lines describing the wishes. Each line has two wishes of the form "+ $x$" (topping $x$ is good) or "- $x$" (topping $x$ is bad).<br/>
+<br/>
+<b id="output">Output</b><br/>
+<br/>
+Print a line with $m$ symbols: for each topping "+" if it is included and "-" if it is not included. You can print any valid solution.<br/>
+<br/>
+If there are no valid solutions, print "IMPOSSIBLE".<br/>
+<br/>
+<b id="constraints">Constraints</b><br/>
+<ul>
+<li>$1 \le n,m \le 10^5$<br/>
+<li>$1 \le x \le m$<br/>
+</li></li></ul>
+<b id="example">Example</b><br/>
+<br/>
+Input:<br/>
+<code>3 5<br/>
++ 1 + 2<br/>
+- 1 + 3<br/>
++ 4 - 2</code><br/>
+<br/>
+Output:<br/>
+<code>- + + + -</code> </div>
